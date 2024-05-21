@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project demonstrates an IoT system that collects information from a sensor, performs local data analysis, and communicates an aggregated value to a nearby server. The system adapts its sampling frequency to save energy and reduce communication overhead. The IoT device is based on an ESP32 prototype board and the firmware is developed using FreeRTOS.
+This project demonstrates an IoT system that generates a signal on the firmaware, performs local data analysis, and communicates an aggregated value to a nearby server. The system adapts its sampling frequency to save energy and reduce communication overhead. The IoT device is based on an ESP32 prototype board and the firmware is developed using FreeRTOS.
 
 ## Features
 
