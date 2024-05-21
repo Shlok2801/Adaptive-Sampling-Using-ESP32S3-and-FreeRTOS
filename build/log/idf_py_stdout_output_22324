@@ -1,0 +1,72 @@
+[1/5] cmd.exe /C "cd /D D:\ESP\v5.2.1\esp-idf\projects\esp-filter\Adaptive-Sampling-Using-ESP32S3-and-FreeRTOS\build\esp-idf\esptool_py && d:\ESP-toolchain\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/ESP/v5.2.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/ESP/v5.2.1/esp-idf/projects/esp-filter/Adaptive-Sampling-Using-ESP32S3-and-FreeRTOS/build/partition_table/partition-table.bin D:/ESP/v5.2.1/esp-idf/projects/esp-filter/Adaptive-Sampling-Using-ESP32S3-and-FreeRTOS/build/mqtt_ssl.bin"
+mqtt_ssl.bin binary size 0xddb70 bytes. Smallest app partition is 0x100000 bytes. 0x22490 bytes (13%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\ESP\v5.2.1\esp-idf\projects\esp-filter\Adaptive-Sampling-Using-ESP32S3-and-FreeRTOS\build\bootloader\esp-idf\esptool_py && d:\ESP-toolchain\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/ESP/v5.2.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 D:/ESP/v5.2.1/esp-idf/projects/esp-filter/Adaptive-Sampling-Using-ESP32S3-and-FreeRTOS/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5250 bytes. 0x2db0 bytes (36%) free.
+[2/3] cmd.exe /C "cd /D D:\ESP\v5.2.1\esp-idf\components\esptool_py && D:\ESP-toolchain\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=D:/ESP/v5.2.1/esp-idf -D SERIAL_TOOL=d:/ESP-toolchain/python_env/idf5.2_py3.11_env/Scripts/python.exe;;D:/ESP/v5.2.1/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3 -D SERIAL_TOOL_ARGS=--before=defesptool.py --chip esp32s3 -p COM3 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 mqtt_ssl.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM3
+Connecting....
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded Flash 8MB (GD)
+Crystal is 40MHz
+MAC: 48:27:e2:e1:d7:ac
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x000edfff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 21072 bytes to 13072...
+Writing at 0x00000000... (100 %)
+Wrote 21072 bytes (13072 compressed) at 0x00000000 in 0.6 seconds (effective 283.8 kbit/s)...
+Hash of data verified.
+Compressed 908144 bytes to 560421...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001d5c4... (5 %)
+Writing at 0x00027e54... (8 %)
+Writing at 0x0002cc52... (11 %)
+Writing at 0x00033eec... (14 %)
+Writing at 0x00040135... (17 %)
+Writing at 0x000464dc... (20 %)
+Writing at 0x0004c723... (22 %)
+Writing at 0x000528d7... (25 %)
+Writing at 0x0005885c... (28 %)
+Writing at 0x0005e696... (31 %)
+Writing at 0x0006444e... (34 %)
+Writing at 0x0006acc8... (37 %)
+Writing at 0x000708a7... (40 %)
+Writing at 0x000763c0... (42 %)
+Writing at 0x0007b26a... (45 %)
+Writing at 0x0008051f... (48 %)
+Writing at 0x00085414... (51 %)
+Writing at 0x0008a777... (54 %)
+Writing at 0x0008fae0... (57 %)
+Writing at 0x00095160... (60 %)
+Writing at 0x0009affb... (62 %)
+Writing at 0x000a08c8... (65 %)
+Writing at 0x000a6629... (68 %)
+Writing at 0x000ac3a4... (71 %)
+Writing at 0x000b1b85... (74 %)
+Writing at 0x000b7849... (77 %)
+Writing at 0x000bd616... (80 %)
+Writing at 0x000c2a03... (82 %)
+Writing at 0x000caf25... (85 %)
+Writing at 0x000d4708... (88 %)
+Writing at 0x000da2ec... (91 %)
+Writing at 0x000e0603... (94 %)
+Writing at 0x000e6d0e... (97 %)
+Writing at 0x000ec293... (100 %)
+Wrote 908144 bytes (560421 compressed) at 0x00010000 in 13.0 seconds (effective 558.4 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 484.1 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+ault_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/ESP/v5.2.1/esp-idf/projects/esp-filter/Adaptive-Sampling-Using-ESP32S3-and-FreeRTOS/build -P D:/ESP/v5.2.1/esp-idf/components/esptool_py/run_serial_tool.cmake"

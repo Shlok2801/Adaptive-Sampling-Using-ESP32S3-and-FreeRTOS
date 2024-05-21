@@ -1,0 +1,727 @@
+����m[0m
+[0;32mI (ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+entry 0x403c9914
+[0;32mI (27) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 21 2024 20:03:25[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=29558h (169304) map[0m
+[0;32mI (130) esp_image: segment 1: paddr=00039580 vaddr=3fc97e00 size=04690h ( 18064) load[0m
+[0;32mI (134) esp_image: segment 2: paddr=0003dc18 vaddr=40374000 size=02400h (  9216) load[0m
+[0;32mI (137) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=9bc58h (638040) map[0m
+[0;32mI (258) esp_image: segment 4: paddr=000dbc80 vaddr=40376400 size=11988h ( 72072) load[0m
+[0;32mI (282) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (283) boot: Disabling RNG early entropy source...[0m
+[0;32mI (294) cpu_start: Multicore app[0m
+[0;32mI (304) cpu_start: Pro cpu start user code[0m
+[0;32mI (304) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (304) cpu_start: Application information:[0m
+[0;32mI (307) cpu_start: Project name:     mqtt_ssl[0m
+[0;32mI (312) cpu_start: App version:      1e01273[0m
+[0;32mI (317) cpu_start: Compile time:     May 21 2024 20:02:33[0m
+[0;32mI (323) cpu_start: ELF file SHA256:  d9f933f80...[0m
+[0;32mI (328) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (333) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (338) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (343) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (348) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (355) heap_init: At 3FCA2510 len 00047200 (284 KiB): RAM[0m
+[0;32mI (361) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (367) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (373) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (380) spi_flash: detected chip: gd[0m
+[0;32mI (384) spi_flash: flash io: dio[0m
+[0;33mW (388) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (401) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (408) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (415) main_task: Started on CPU0[0m
+[0;32mI (425) main_task: Calling app_main()[0m
+[0;32mI (425) MQTT_EVENT:: [APP] Startup..[0m
+[0;32mI (425) MQTT_EVENT:: [APP] Free memory: 332064 bytes[0m
+[0;32mI (435) MQTT_EVENT:: [APP] IDF version: v5.2.1[0m
+[0;32mI (465) example_connect: Start example_connect.[0m
+[0;32mI (465) pp: pp rom version: e7ae62f[0m
+[0;32mI (465) net80211: net80211 rom version: e7ae62f[0m
+I (475) wifi:wifi driver task: 3fcac440, prio:23, stack:6656, core=0
+I (485) wifi:wifi firmware version: a9f5b59
+I (485) wifi:wifi certification version: v7.0
+I (485) wifi:config NVS flash: enabled
+I (485) wifi:config nano formating: disabled
+I (485) wifi:Init data frame dynamic rx buffer num: 32
+I (495) wifi:Init static rx mgmt buffer num: 5
+I (495) wifi:Init management short buffer num: 32
+I (505) wifi:Init dynamic tx buffer num: 32
+I (505) wifi:Init static tx FG buffer num: 2
+I (515) wifi:Init static rx buffer size: 1600
+I (515) wifi:Init static rx buffer num: 10
+I (515) wifi:Init dynamic rx buffer num: 32
+[0;32mI (525) wifi_init: rx ba win: 6[0m
+[0;32mI (525) wifi_init: tcpip mbox: 32[0m
+[0;32mI (535) wifi_init: udp mbox: 6[0m
+[0;32mI (535) wifi_init: tcp mbox: 6[0m
+[0;32mI (535) wifi_init: tcp tx win: 5760[0m
+[0;32mI (545) wifi_init: tcp rx win: 5760[0m
+[0;32mI (545) wifi_init: tcp mss: 1440[0m
+[0;32mI (545) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (555) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (565) phy_init: phy_version 640,cd64a1a,Jan 24 2024,17:28:12[0m
+I (605) wifi:mode : sta (48:27:e2:e1:d7:ac)
+I (605) wifi:enable tsf
+[0;32mI (605) example_connect: Connecting to TIM-42988688...[0m
+[0;32mI (605) example_connect: Waiting for IP(s)[0m
+I (3015) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (3515) wifi:state: init -> auth (b0)
+I (3525) wifi:state: auth -> assoc (0)
+I (3535) wifi:state: assoc -> run (10)
+I (3545) wifi:<ba-add>idx:0 (ifx:0, d6:92:5e:7b:b6:90), tid:0, ssn:0, winSize:64
+I (3575) wifi:connected with TIM-42988688, aid = 11, channel 11, BW20, bssid = d6:92:5e:7b:b6:90
+I (3575) wifi:security: WPA2-PSK, phy: bgn, rssi: -87
+I (3575) wifi:pm start, type: 1
+
+I (3575) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3585) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (3605) wifi:<ba-add>idx:1 (ifx:0, d6:92:5e:7b:b6:90), tid:6, ssn:0, winSize:64
+I (3765) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (4595) esp_netif_handlers: example_netif_sta ip: 192.168.1.41, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (4595) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.1.41[0m
+[0;32mI (5465) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:4a27:e2ff:fee1:d7ac, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (5465) example_common: Connected to example_netif_sta[0m
+[0;32mI (5475) example_common: - IPv4 address: 192.168.1.41,[0m
+[0;32mI (5475) example_common: - IPv6 address: fe80:0000:0000:0000:4a27:e2ff:fee1:d7ac, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+max magnitude: 1.068446
+max index: 5
+sample freq: 1000.000000
+size: 1024
+window size 5000
+[0;32mI (5655) MQTT_EVENT:: [APP] Free memory: 277596 bytes[0m
+[0;32mI (5665) MQTT_EVENT:: Other event id:7[0m
+[0;32mI (5665) main_task: Returned from app_main()[0m
+[0;31mE (5675) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (5685) esp-tls: Failed to open new connection[0m
+[0;31mE (5685) transport_base: Failed to open a new connection[0m
+[0;31mE (5695) mqtt_client: Error transport connect[0m
+[0;32mI (5695) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (5705) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (5705) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (5715) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (5715) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+max magnitude: 1.006800
+max index: 500
+sample freq: 9.765625
+size: 1024
+window size 48
+Energy consumption remains the same for both scenarios.
+Original energy consumption: 0.11 Joules
+Adaptive energy consumption: 0.11 Joules
+Energy savings: 0.00 Joules
+[0;32mI (20725) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (20735) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (20735) esp-tls: Failed to open new connection[0m
+[0;31mE (20745) transport_base: Failed to open a new connection[0m
+[0;31mE (20745) mqtt_client: Error transport connect[0m
+[0;32mI (20755) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (20755) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (20765) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (20765) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (20775) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (30785) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (30785) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (30785) esp-tls: Failed to open new connection[0m
+[0;31mE (30795) transport_base: Failed to open a new connection[0m
+[0;31mE (30795) mqtt_client: Error transport connect[0m
+[0;32mI (30805) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (30805) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (30815) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (30825) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (30825) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (40835) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (40835) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (40835) esp-tls: Failed to open new connection[0m
+[0;31mE (40845) transport_base: Failed to open a new connection[0m
+[0;31mE (40845) mqtt_client: Error transport connect[0m
+[0;32mI (40855) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (40855) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (40865) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (40865) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (40875) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (50885) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (50885) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (50885) esp-tls: Failed to open new connection[0m
+[0;31mE (50895) transport_base: Failed to open a new connection[0m
+[0;31mE (50895) mqtt_client: Error transport connect[0m
+[0;32mI (50905) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (50905) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (50915) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (50915) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (50925) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (65925) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (65925) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (65935) esp-tls: Failed to open new connection[0m
+[0;31mE (65935) transport_base: Failed to open a new connection[0m
+[0;31mE (65945) mqtt_client: Error transport connect[0m
+[0;32mI (65945) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (65955) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (65955) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (65965) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (65965) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (80975) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (80975) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (80975) esp-tls: Failed to open new connection[0m
+[0;31mE (80985) transport_base: Failed to open a new connection[0m
+[0;31mE (80985) mqtt_client: Error transport connect[0m
+[0;32mI (80995) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (80995) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (81005) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (81015) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (81015) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (91025) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (91025) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (91025) esp-tls: Failed to open new connection[0m
+[0;31mE (91035) transport_base: Failed to open a new connection[0m
+[0;31mE (91035) mqtt_client: Error transport connect[0m
+[0;32mI (91045) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (91045) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (91055) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (91065) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (91065) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (101075) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (101075) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (101075) esp-tls: Failed to open new connection[0m
+[0;31mE (101085) transport_base: Failed to open a new connection[0m
+[0;31mE (101085) mqtt_client: Error transport connect[0m
+[0;32mI (101095) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (101095) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (101105) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (101105) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (101115) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (111125) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (111125) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (111125) esp-tls: Failed to open new connection[0m
+[0;31mE (111135) transport_base: Failed to open a new connection[0m
+[0;31mE (111135) mqtt_client: Error transport connect[0m
+[0;32mI (111145) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (111145) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (111155) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (111155) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (111165) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (121175) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (121175) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (121175) esp-tls: Failed to open new connection[0m
+[0;31mE (121185) transport_base: Failed to open a new connection[0m
+[0;31mE (121185) mqtt_client: Error transport connect[0m
+[0;32mI (121195) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (121195) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (121205) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (121205) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (121215) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (131225) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (131225) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (131225) esp-tls: Failed to open new connection[0m
+[0;31mE (131235) transport_base: Failed to open a new connection[0m
+[0;31mE (131235) mqtt_client: Error transport connect[0m
+[0;32mI (131245) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (131245) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (131255) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (131255) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (131265) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (141275) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (141275) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (141275) esp-tls: Failed to open new connection[0m
+[0;31mE (141285) transport_base: Failed to open a new connection[0m
+[0;31mE (141285) mqtt_client: Error transport connect[0m
+[0;32mI (141295) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (141295) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (141305) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (141305) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (141315) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (151325) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (151325) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (151325) esp-tls: Failed to open new connection[0m
+[0;31mE (151335) transport_base: Failed to open a new connection[0m
+[0;31mE (151335) mqtt_client: Error transport connect[0m
+[0;32mI (151345) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (151345) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (151355) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (151355) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (151365) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (161375) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (161375) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (161375) esp-tls: Failed to open new connection[0m
+[0;31mE (161385) transport_base: Failed to open a new connection[0m
+[0;31mE (161385) mqtt_client: Error transport connect[0m
+[0;32mI (161395) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (161395) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (161405) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (161405) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (161415) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (171425) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (171425) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (171425) esp-tls: Failed to open new connection[0m
+[0;31mE (171435) transport_base: Failed to open a new connection[0m
+[0;31mE (171435) mqtt_client: Error transport connect[0m
+[0;32mI (171445) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (171445) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (171455) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (171465) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (171465) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (181475) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (181475) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (181475) esp-tls: Failed to open new connection[0m
+[0;31mE (181485) transport_base: Failed to open a new connection[0m
+[0;31mE (181485) mqtt_client: Error transport connect[0m
+[0;32mI (181495) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (181495) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (181505) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (181505) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (181515) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (191525) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (191525) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (191525) esp-tls: Failed to open new connection[0m
+[0;31mE (191535) transport_base: Failed to open a new connection[0m
+[0;31mE (191535) mqtt_client: Error transport connect[0m
+[0;32mI (191545) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (191545) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (191555) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (191555) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (191565) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (201575) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (201575) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (201575) esp-tls: Failed to open new connection[0m
+[0;31mE (201585) transport_base: Failed to open a new connection[0m
+[0;31mE (201585) mqtt_client: Error transport connect[0m
+[0;32mI (201595) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (201595) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (201605) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (201605) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (201615) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (211625) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (211625) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (211625) esp-tls: Failed to open new connection[0m
+[0;31mE (211635) transport_base: Failed to open a new connection[0m
+[0;31mE (211635) mqtt_client: Error transport connect[0m
+[0;32mI (211645) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (211645) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (211655) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (211655) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (211665) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (221675) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (221675) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (221675) esp-tls: Failed to open new connection[0m
+[0;31mE (221685) transport_base: Failed to open a new connection[0m
+[0;31mE (221685) mqtt_client: Error transport connect[0m
+[0;32mI (221695) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (221695) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (221705) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (221705) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (221715) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (231725) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (231725) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (231725) esp-tls: Failed to open new connection[0m
+[0;31mE (231735) transport_base: Failed to open a new connection[0m
+[0;31mE (231735) mqtt_client: Error transport connect[0m
+[0;32mI (231745) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (231745) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (231755) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (231755) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (231765) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (241775) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (241775) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (241775) esp-tls: Failed to open new connection[0m
+[0;31mE (241785) transport_base: Failed to open a new connection[0m
+[0;31mE (241785) mqtt_client: Error transport connect[0m
+[0;32mI (241795) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (241795) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (241805) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (241805) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (241815) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (251825) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (251825) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (251825) esp-tls: Failed to open new connection[0m
+[0;31mE (251835) transport_base: Failed to open a new connection[0m
+[0;31mE (251835) mqtt_client: Error transport connect[0m
+[0;32mI (251845) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (251845) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (251855) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (251865) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (251865) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (261875) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (261875) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (261875) esp-tls: Failed to open new connection[0m
+[0;31mE (261885) transport_base: Failed to open a new connection[0m
+[0;31mE (261885) mqtt_client: Error transport connect[0m
+[0;32mI (261895) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (261895) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (261905) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (261905) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (261915) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (271925) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (271925) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (271925) esp-tls: Failed to open new connection[0m
+[0;31mE (271935) transport_base: Failed to open a new connection[0m
+[0;31mE (271935) mqtt_client: Error transport connect[0m
+[0;32mI (271945) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (271945) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (271955) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (271955) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (271965) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (281975) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (281975) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (281975) esp-tls: Failed to open new connection[0m
+[0;31mE (281985) transport_base: Failed to open a new connection[0m
+[0;31mE (281985) mqtt_client: Error transport connect[0m
+[0;32mI (281995) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (281995) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (282005) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (282005) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (282015) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (292025) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (292025) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (292025) esp-tls: Failed to open new connection[0m
+[0;31mE (292035) transport_base: Failed to open a new connection[0m
+[0;31mE (292035) mqtt_client: Error transport connect[0m
+[0;32mI (292045) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (292045) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (292055) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (292065) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (292065) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (302075) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (302075) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (302075) esp-tls: Failed to open new connection[0m
+[0;31mE (302085) transport_base: Failed to open a new connection[0m
+[0;31mE (302085) mqtt_client: Error transport connect[0m
+[0;32mI (302095) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (302095) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (302105) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (302115) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (302115) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+I (310305) wifi:bcn_timeout,ap_probe_send_start
+[0;32mI (312125) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (312125) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (312125) esp-tls: Failed to open new connection[0m
+[0;31mE (312135) transport_base: Failed to open a new connection[0m
+[0;31mE (312135) mqtt_client: Error transport connect[0m
+[0;32mI (312145) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (312145) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (312155) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (312165) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (312165) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+I (312805) wifi:ap_probe_send over, resett wifi status to disassoc
+I (312805) wifi:state: run -> init (c800)
+I (312805) wifi:pm stop, total sleep time: 255311809 us / 309228957 us
+
+I (312815) wifi:<ba-del>idx:0, tid:0
+I (312815) wifi:<ba-del>idx:1, tid:6
+I (312815) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1
+[0;32mI (312825) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (315245) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (317655) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (320055) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (322175) MQTT_EVENT:: Other event id:7[0m
+I (322465) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (322475) wifi:state: init -> auth (b0)
+I (322475) wifi:state: auth -> assoc (0)
+I (322485) wifi:state: assoc -> run (10)
+I (322495) wifi:<ba-add>idx:0 (ifx:0, d6:92:5e:7b:b6:90), tid:0, ssn:0, winSize:64
+I (322515) wifi:connected with TIM-42988688, aid = 13, channel 11, BW20, bssid = d6:92:5e:7b:b6:90
+I (322515) wifi:security: WPA2-PSK, phy: bgn, rssi: -95
+I (322515) wifi:pm start, type: 1
+
+I (322515) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (322535) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (322545) wifi:<ba-add>idx:1 (ifx:0, d6:92:5e:7b:b6:90), tid:6, ssn:0, winSize:64
+[0;32mI (323525) esp_netif_handlers: example_netif_sta ip: 192.168.1.41, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (323525) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.1.41[0m
+[0;31mE (324185) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (324185) esp-tls: Failed to open new connection[0m
+[0;31mE (324185) transport_base: Failed to open a new connection[0m
+[0;31mE (324195) mqtt_client: Error transport connect[0m
+[0;32mI (324195) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (324205) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (324205) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (324215) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (324225) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (324465) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:4a27:e2ff:fee1:d7ac, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (339225) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (339225) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (339225) esp-tls: Failed to open new connection[0m
+[0;31mE (339235) transport_base: Failed to open a new connection[0m
+[0;31mE (339235) mqtt_client: Error transport connect[0m
+[0;32mI (339245) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (339245) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (339255) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (339255) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (339265) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (349275) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (349275) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (349275) esp-tls: Failed to open new connection[0m
+[0;31mE (349285) transport_base: Failed to open a new connection[0m
+[0;31mE (349285) mqtt_client: Error transport connect[0m
+[0;32mI (349295) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (349295) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (349305) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (349315) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (349315) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (359325) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (359325) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (359325) esp-tls: Failed to open new connection[0m
+[0;31mE (359335) transport_base: Failed to open a new connection[0m
+[0;31mE (359335) mqtt_client: Error transport connect[0m
+[0;32mI (359345) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (359345) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (359355) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (359365) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (359365) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (369375) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (369375) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (369375) esp-tls: Failed to open new connection[0m
+[0;31mE (369385) transport_base: Failed to open a new connection[0m
+[0;31mE (369385) mqtt_client: Error transport connect[0m
+[0;32mI (369395) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (369395) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (369405) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (369405) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (369415) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (379425) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (379425) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (379425) esp-tls: Failed to open new connection[0m
+[0;31mE (379435) transport_base: Failed to open a new connection[0m
+[0;31mE (379435) mqtt_client: Error transport connect[0m
+[0;32mI (379445) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (379445) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (379455) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (379455) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (379465) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (389475) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (389475) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (389475) esp-tls: Failed to open new connection[0m
+[0;31mE (389485) transport_base: Failed to open a new connection[0m
+[0;31mE (389485) mqtt_client: Error transport connect[0m
+[0;32mI (389495) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (389495) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (389505) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (389505) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (389515) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (399525) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (399525) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (399525) esp-tls: Failed to open new connection[0m
+[0;31mE (399535) transport_base: Failed to open a new connection[0m
+[0;31mE (399535) mqtt_client: Error transport connect[0m
+[0;32mI (399545) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (399545) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (399555) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (399555) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (399565) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (409575) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (409575) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (409575) esp-tls: Failed to open new connection[0m
+[0;31mE (409585) transport_base: Failed to open a new connection[0m
+[0;31mE (409595) mqtt_client: Error transport connect[0m
+[0;32mI (409595) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (409595) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (409605) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (409615) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (409615) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (419625) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (419625) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (419625) esp-tls: Failed to open new connection[0m
+[0;31mE (419635) transport_base: Failed to open a new connection[0m
+[0;31mE (419635) mqtt_client: Error transport connect[0m
+[0;32mI (419645) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (419645) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (419655) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (419655) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (419665) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (429675) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (429675) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (429675) esp-tls: Failed to open new connection[0m
+[0;31mE (429685) transport_base: Failed to open a new connection[0m
+[0;31mE (429685) mqtt_client: Error transport connect[0m
+[0;32mI (429695) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (429695) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (429705) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (429715) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (429715) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (439725) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (439725) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (439725) esp-tls: Failed to open new connection[0m
+[0;31mE (439735) transport_base: Failed to open a new connection[0m
+[0;31mE (439735) mqtt_client: Error transport connect[0m
+[0;32mI (439745) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (439745) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (439755) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (439765) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (439765) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (449775) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (449775) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (449775) esp-tls: Failed to open new connection[0m
+[0;31mE (449785) transport_base: Failed to open a new connection[0m
+[0;31mE (449785) mqtt_client: Error transport connect[0m
+[0;32mI (449795) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (449795) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (449805) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (449805) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (449815) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (459825) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (459825) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (459825) esp-tls: Failed to open new connection[0m
+[0;31mE (459835) transport_base: Failed to open a new connection[0m
+[0;31mE (459835) mqtt_client: Error transport connect[0m
+[0;32mI (459845) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (459845) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (459855) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (459855) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (459865) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (469875) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (469875) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (469875) esp-tls: Failed to open new connection[0m
+[0;31mE (469885) transport_base: Failed to open a new connection[0m
+[0;31mE (469885) mqtt_client: Error transport connect[0m
+[0;32mI (469895) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (469895) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (469905) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (469905) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (469915) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (479925) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (479925) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (479925) esp-tls: Failed to open new connection[0m
+[0;31mE (479935) transport_base: Failed to open a new connection[0m
+[0;31mE (479935) mqtt_client: Error transport connect[0m
+[0;32mI (479945) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (479945) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (479955) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (479955) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (479965) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (489975) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (489975) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (489975) esp-tls: Failed to open new connection[0m
+[0;31mE (489985) transport_base: Failed to open a new connection[0m
+[0;31mE (489985) mqtt_client: Error transport connect[0m
+[0;32mI (489995) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (489995) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (490005) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (490005) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (490015) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (500025) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (500025) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (500025) esp-tls: Failed to open new connection[0m
+[0;31mE (500035) transport_base: Failed to open a new connection[0m
+[0;31mE (500035) mqtt_client: Error transport connect[0m
+[0;32mI (500045) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (500045) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (500055) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (500065) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (500065) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (510075) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (510075) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (510075) esp-tls: Failed to open new connection[0m
+[0;31mE (510085) transport_base: Failed to open a new connection[0m
+[0;31mE (510085) mqtt_client: Error transport connect[0m
+[0;32mI (510095) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (510095) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (510105) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (510105) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (510115) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (520125) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (520125) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (520125) esp-tls: Failed to open new connection[0m
+[0;31mE (520135) transport_base: Failed to open a new connection[0m
+[0;31mE (520135) mqtt_client: Error transport connect[0m
+[0;32mI (520145) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (520145) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (520155) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (520155) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (520165) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (530175) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (530175) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (530175) esp-tls: Failed to open new connection[0m
+[0;31mE (530185) transport_base: Failed to open a new connection[0m
+[0;31mE (530185) mqtt_client: Error transport connect[0m
+[0;32mI (530195) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (530195) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (530205) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (530205) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (530215) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (540225) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (540225) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (540225) esp-tls: Failed to open new connection[0m
+[0;31mE (540235) transport_base: Failed to open a new connection[0m
+[0;31mE (540235) mqtt_client: Error transport connect[0m
+[0;32mI (540245) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (540245) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (540255) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (540255) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (540265) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (550275) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (550275) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (550275) esp-tls: Failed to open new connection[0m
+[0;31mE (550285) transport_base: Failed to open a new connection[0m
+[0;31mE (550285) mqtt_client: Error transport connect[0m
+[0;32mI (550295) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (550295) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (550305) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (550305) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (550315) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (560325) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (560325) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (560325) esp-tls: Failed to open new connection[0m
+[0;31mE (560335) transport_base: Failed to open a new connection[0m
+[0;31mE (560335) mqtt_client: Error transport connect[0m
+[0;32mI (560345) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (560345) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (560355) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (560355) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (560365) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (570375) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (570375) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (570375) esp-tls: Failed to open new connection[0m
+[0;31mE (570385) transport_base: Failed to open a new connection[0m
+[0;31mE (570385) mqtt_client: Error transport connect[0m
+[0;32mI (570395) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (570395) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (570405) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (570415) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (570415) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (580425) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (580425) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (580425) esp-tls: Failed to open new connection[0m
+[0;31mE (580435) transport_base: Failed to open a new connection[0m
+[0;31mE (580435) mqtt_client: Error transport connect[0m
+[0;32mI (580445) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (580445) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (580455) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (580455) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (580465) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (590475) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (590475) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (590475) esp-tls: Failed to open new connection[0m
+[0;31mE (590485) transport_base: Failed to open a new connection[0m
+[0;31mE (590485) mqtt_client: Error transport connect[0m
+[0;32mI (590495) MQTT_EVENT:: MQTT_EVENT_ERROR[0m
+[0;32mI (590495) MQTT_EVENT:: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (590505) MQTT_EVENT:: Last tls stack error number: 0x0[0m
+[0;32mI (590505) MQTT_EVENT:: Last captured errno : 0 (Success)[0m
+[0;32mI (590515) MQTT_EVENT:: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (600525) MQTT_EVENT:: Other event id:7[0m
+[0;31mE (600525) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (600525) esp-tls: Failed to open new connection[0m
+[0;31mE (600535) transport_base: Failed to open a new connection[0m
+[0;31mE (600535) mqtt_client: Error transport connect[0m
+[0;3

@@ -1,0 +1,19 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\ESP\v5.2.1\esp-idf\projects\esp-filter\Adaptive-Sampling-Using-ESP32S3-and-FreeRTOS\build\bootloader\esp-idf\esptool_py && d:\ESP-toolchain\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/ESP/v5.2.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 D:/ESP/v5.2.1/esp-idf/projects/esp-filter/Adaptive-Sampling-Using-ESP32S3-and-FreeRTOS/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5250 bytes. 0x2db0 bytes (36%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj
+In file included from D:/ESP/v5.2.1/esp-idf/projects/esp-filter/Adaptive-Sampling-Using-ESP32S3-and-FreeRTOS/main/app_main.c:20:
+D:/ESP/v5.2.1/esp-idf/components/xtensa/deprecated_include/freertos/xtensa_api.h:9:2: warning: #warning "This header file has been moved, thus `#include <freertos/xtensa_api.h>` is deprecated. Please use `#include <xtensa_api.h>` instead" [-Wcpp]
+    9 | #warning "This header file has been moved, thus `#include <freertos/xtensa_api.h>` is deprecated. Please use `#include <xtensa_api.h>` instead"
+      |  ^~~~~~~
+[3/7] Linking C static library esp-idf\main\libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable mqtt_ssl.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated D:/ESP/v5.2.1/esp-idf/projects/esp-filter/Adaptive-Sampling-Using-ESP32S3-and-FreeRTOS/build/mqtt_ssl.bin
+[7/7] cmd.exe /C "cd /D D:\ESP\v5.2.1\esp-idf\projects\esp-filter\Adaptive-Sampling-Using-ESP32S3-and-FreeRTOS\build\esp-idf\esptool_py && d:\ESP-toolchain\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/ESP/v5.2.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/ESP/v5.2.1/esp-idf/projects/esp-filter/Adaptive-Sampling-Using-ESP32S3-and-FreeRTOS/build/partition_table/partition-table.bin D:/ESP/v5.2.1/esp-idf/projects/esp-filter/Adaptive-Sampling-Using-ESP32S3-and-FreeRTOS/build/mqtt_ssl.bin"
+mqtt_ssl.bin binary size 0xddbf0 bytes. Smallest app partition is 0x100000 bytes. 0x22410 bytes (13%) free.

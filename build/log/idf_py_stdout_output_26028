@@ -1,0 +1,86 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\ESP\v5.2.1\esp-idf\projects\esp-filter\Adaptive-Sampling-Using-ESP32S3-and-FreeRTOS\build\bootloader\esp-idf\esptool_py && d:\ESP-toolchain\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/ESP/v5.2.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 D:/ESP/v5.2.1/esp-idf/projects/esp-filter/Adaptive-Sampling-Using-ESP32S3-and-FreeRTOS/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5250 bytes. 0x2db0 bytes (36%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj
+In file included from D:/ESP/v5.2.1/esp-idf/projects/esp-filter/Adaptive-Sampling-Using-ESP32S3-and-FreeRTOS/main/app_main.c:29:
+D:/ESP/v5.2.1/esp-idf/components/xtensa/deprecated_include/freertos/xtensa_api.h:9:2: warning: #warning "This header file has been moved, thus `#include <freertos/xtensa_api.h>` is deprecated. Please use `#include <xtensa_api.h>` instead" [-Wcpp]
+    9 | #warning "This header file has been moved, thus `#include <freertos/xtensa_api.h>` is deprecated. Please use `#include <xtensa_api.h>` instead"
+      |  ^~~~~~~
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable mqtt_ssl.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated D:/ESP/v5.2.1/esp-idf/projects/esp-filter/Adaptive-Sampling-Using-ESP32S3-and-FreeRTOS/build/mqtt_ssl.bin
+[7/8] cmd.exe /C "cd /D D:\ESP\v5.2.1\esp-idf\projects\esp-filter\Adaptive-Sampling-Using-ESP32S3-and-FreeRTOS\build\esp-idf\esptool_py && d:\ESP-toolchain\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/ESP/v5.2.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/ESP/v5.2.1/esp-idf/projects/esp-filter/Adaptive-Sampling-Using-ESP32S3-and-FreeRTOS/build/partition_table/partition-table.bin D:/ESP/v5.2.1/esp-idf/projects/esp-filter/Adaptive-Sampling-Using-ESP32S3-and-FreeRTOS/build/mqtt_ssl.bin"
+mqtt_ssl.bin binary size 0xddc50 bytes. Smallest app partition is 0x100000 bytes. 0x223b0 bytes (13%) free.
+[7/8] cmd.exe /C "cd /D D:\ESP\v5.2.1\esp-idf\components\esptool_py && D:\ESP-toolchain\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=D:/ESP/v5.2.1/esp-idf -D SERIAL_TOOL=d:/ESP-toolchain/python_env/idf5.2_py3.11_env/Scripts/python.exe;;D:/ESP/v5.2.esptool.py --chip esp32s3 -p COM3 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 mqtt_ssl.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM3
+Connecting....
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded Flash 8MB (GD)
+Crystal is 40MHz
+MAC: 48:27:e2:e1:d7:ac
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x000edfff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 21072 bytes to 13072...
+Writing at 0x00000000... (100 %)
+Wrote 21072 bytes (13072 compressed) at 0x00000000 in 0.6 seconds (effective 288.6 kbit/s)...
+Hash of data verified.
+Compressed 908368 bytes to 560413...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001d6a9... (5 %)
+Writing at 0x00027ed9... (8 %)
+Writing at 0x0002ccd5... (11 %)
+Writing at 0x00033f52... (14 %)
+Writing at 0x000401d6... (17 %)
+Writing at 0x000465c6... (20 %)
+Writing at 0x0004c7f4... (22 %)
+Writing at 0x000529f0... (25 %)
+Writing at 0x00058920... (28 %)
+Writing at 0x0005e765... (31 %)
+Writing at 0x0006452d... (34 %)
+Writing at 0x0006adaf... (37 %)
+Writing at 0x00070999... (40 %)
+Writing at 0x00076489... (42 %)
+Writing at 0x0007b32a... (45 %)
+Writing at 0x000805ee... (48 %)
+Writing at 0x000854df... (51 %)
+Writing at 0x0008a84c... (54 %)
+Writing at 0x0008fba6... (57 %)
+Writing at 0x00095230... (60 %)
+Writing at 0x0009b0f1... (62 %)
+Writing at 0x000a09e3... (65 %)
+Writing at 0x000a6713... (68 %)
+Writing at 0x000ac484... (71 %)
+Writing at 0x000b1c63... (74 %)
+Writing at 0x000b793d... (77 %)
+Writing at 0x000bd711... (80 %)
+Writing at 0x000c2b00... (82 %)
+Writing at 0x000cb1e6... (85 %)
+Writing at 0x000d47d5... (88 %)
+Writing at 0x000da3eb... (91 %)
+Writing at 0x000e06f0... (94 %)
+Writing at 0x000e6dfd... (97 %)
+Writing at 0x000ec37c... (100 %)
+Wrote 908368 bytes (560413 compressed) at 0x00010000 in 13.0 seconds (effective 558.1 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 434.5 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+1/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/ESP/v5.2.1/esp-idf/projects/esp-filter/Adaptive-Sampling-Using-ESP32S3-and-FreeRTOS/build -P D:/ESP/v5.2.1/esp-idf/components/esptool_py/run_serial_tool.cmake"
