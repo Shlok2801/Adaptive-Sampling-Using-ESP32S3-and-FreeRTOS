@@ -42,6 +42,10 @@ git clone https://github.com/Shlok2801/Adaptive-Sampling-Using-ESP32S3-and-FreeR
 
 Setup the ESP-IDF framework on your device 
 
+### Clean the previous build
+
+idf.py fullclean
+
 ### Configure the project
 
 Navigate to the project directory and configure the project using 'menuconfig'.
@@ -51,15 +55,9 @@ Once in menuconfig:
 - Put in the credentials to the WiFi (SSID, Password).
 - You also have to set the MQTT broker url which is under Example Configuration.
 
-### Clean the previous build
-
-idf.py fullclean
-
-
 ### Build and Flash the firmware
 
-idf.py build
-idf.py flash
+idf.py build flash
 
 ### Monitor the output
 
