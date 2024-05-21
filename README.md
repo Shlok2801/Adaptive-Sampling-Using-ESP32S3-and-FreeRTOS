@@ -18,7 +18,7 @@ This project demonstrates an IoT system that generates a signal on the firmaware
 
 The input signal is of the form: 
 
-\[2 \cdot \sin(2 \pi \cdot 3 \cdot t) + 4 \cdot \sin(2 \pi \cdot 5 \cdot t)\]
+2 * sin(2 * pi * 3 * t) + 4 * sin(2 * pi * 5 * t)
 
 ## Hardware Requirements
 
